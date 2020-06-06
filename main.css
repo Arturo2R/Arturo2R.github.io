@@ -1,7 +1,76 @@
-
+:root {
+    --principal: #b82032;
+    --secundario: #35c2e6;
+    --back: #161414;
+}
 
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+h1,
+h2 {
+    color: var(--principal);
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+section {
+    background-color: var(--back);
+    width: 100vw;
+    height: 100vh;
+}
+
+#welcome-section {
+    justify-items: center;
+}
+
+.hey {
+
+    font-size: 5rem;
+}
+
+/*---Esto es momentaneo ---*/
+.simple {
+    height: 2rem;
+}
+
+/*---Esto es momentaneo ---*/
+
+#projects {
+    color: var(--secundario);
+}
+
+#profile-link {
+    height: 50vh;
 }
