@@ -1,9 +1,16 @@
+/*TODO: tod0 el root hay que cambiarlo esto solo es base
+ porque despues eligo los colores y la fuente */
+
 :root {
     --principal: #b82032;
-    --secundario: #35c2e6;
+    --secundario: #ffffff;
     --back: #161414;
+    --sans: sans-serif;
+    --other: 'Raleway';
 }
-
+/* Fuentes de Google  */
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/* Fuentes De Google */
 
 * {
     margin: 0;
@@ -36,28 +43,101 @@ body {
 
 h1,
 h2 {
-    color: var(--principal);
+    font-family: 'Raleway', sans-serif;
+    color: var(--secundario);
     font-weight: 700;
     text-align: center;
 }
 
-h2 {
-    font-size: 3rem;
+h1{
+    font-size: 6rem;
 }
 
+h2 {
+    font-size: 4.2rem; 
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/*---nav---*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--principal);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.nav-list {
+    margin-right: 2rem;
+    display: flex;
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+}
+/*---Welcome section---*/
 section {
     background-color: var(--back);
     width: 100vw;
     height: 100vh;
 }
-
+/* Project Section */
 #welcome-section {
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #112157 0%,#16367a 50%,#122f72 77%,#122f72 77%,#1e4daa 100%);
 }
 
-.hey {
 
-    font-size: 5rem;
+#welcome-section > p {
+    font-size: 3rem;
+    font-family: var(--sans);
+    font-weight: 100;
+    font-style: italic;
+    color: var(--principal);
+}
+/* Project Section */
+#projects {
+    background-color: rgba(111, 103, 219, 0.856);
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
 }
 
 /*---Esto es momentaneo ---*/
@@ -65,11 +145,6 @@ section {
     height: 2rem;
 }
 
-/*---Esto es momentaneo ---*/
-
-#projects {
-    color: var(--secundario);
-}
 
 #profile-link {
     height: 50vh;
