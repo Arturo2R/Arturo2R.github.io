@@ -1,0 +1,14 @@
+{
+  "name": "PersonalPortfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Arturo2R/PersonalPortfolio.git",
+  "author": "Arturo Rebolledo <elrayoarturopro@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.4"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -o ./main.css --jit --purge './*.html' -w"
+  }
+}
