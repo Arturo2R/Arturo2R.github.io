@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Arturo Rebolledo</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link href="./main.css" rel="stylesheet" />
-    <meta name="author" content="Arturo Rebolledo" />
-    <!-- <link
+
+<head>
+  <title>Arturo Rebolledo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="./main.css" rel="stylesheet" />
+  <meta name="author" content="Arturo Rebolledo" />
+  <!-- <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:ital,wght@1,200&family=Zilla+Slab:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      /* .custom-grid {
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.4.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:ital,wght@1,200&family=Zilla+Slab:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* .custom-grid {
         padding-right: 4rem;
         padding-left: 4rem;
         display: grid;
@@ -34,202 +29,177 @@
         grid-column-gap: 2.5rem;
         grid-row-gap: 2.5rem;
       }
+      */
+    .div0 {
+      background-color: beige;
+    }
 
-      .div1 {
-        grid-area: 1 / 1 / 2 / 3;
-      }
-      .div2 {
-        grid-area: 1 / 3 / 2 / 4;
-      }
-      .div3 {
-        grid-area: 2 / 2 / 3 / 4;
-      }
-      .div4 {
-        grid-area: 2 / 1 / 3 / 2;
-      }
-      .div5 {
-        grid-area: 3 / 1 / 4 / 3;
-      }
-      .div6 {
-        grid-area: 3 / 3 / 4 / 4;
-      } */
+    .div1 {
+      background-color: aliceblue;
+    }
 
-      .x-pattern {
-        background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2396a6b8' fill-opacity='0.63' fill-rule='evenodd'/%3E%3C/svg%3E");
-      }
-    </style>
-  </head>
+    .div2 {
+      background-color: antiquewhite;
+    }
 
-  <body>
-    <main>
-      <!------NavBar------------------------------------->
-      <nav
-        class="fixed z-10 flex items-center justify-between w-full p-4  bg-hueso nav"
-        id="navbar "
-      >
-        <img src="" alt="Logo" />
-        <ul
-          class="
-            flex flex-row
-            justify-between
-            w-2/5
+    .div3 {
+      background-color: aqua;
+    }
+
+    .div4 {
+      background-color: aquamarine;
+    }
+
+    .div5 {
+      background-color: azure;
+    }
+
+
+    .x-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2396a6b8' fill-opacity='0.63' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!------NavBar------------------------------------->
+    <!-- <nav class="z-10 flex items-center justify-between w-full p-4 bg-hueso nav" id="navbar" x-data="{isOpen: false}">
+      <img src="" alt="Logo" class="mx-auto md:m-0" />
+      <button class="md:hidden" @click="console.log('Esta abierto careverga');">
+        x
+      </button>
+      <ul class="
+            hidden
+            md:flex md:flex-row md:justify-between md:w-2/5
             text-3xl
             font-[500]
             text-good-gray
             font-secondary
-          "
-        >
-          <li class="h-full p-1 hover:bg-red-200 hover:text-white">
-            <a href="#welcome-section">Sobre Mi</a>
-          </li>
-          <li class="h-full p-1 hover:bg-red-200 hover:text-white">
-            <a href="#project-title">Work</a>
-          </li>
-          <li class="h-full p-1 hover:bg-red-200 hover:text-white">
-            <a href="#profile-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!------Welcome Section------>
-      <section id="welcome-section" class="flex w-full min-h-screen">
-        <div
-          class="flex-row px-64 mx-auto my-auto text-center place-self-center"
-        >
-          <h1 class="text-royal-red font-primary text-9xl">Arturo Rebolledo</h1>
-          <p class="text-3xl italic font-thin text-normal text-good-gray">
-            Software Engineer
-          </p>
+          ">
+        <li class="h-full p-1 hover:bg-red-200 hover:text-white">
+          <a href="#welcome-section">Sobre Mi</a>
+        </li>
+        <li class="h-full p-1 hover:bg-red-200 hover:text-white">
+          <a href="#project-title">Work</a>
+        </li>
+        <li class="h-full p-1 hover:bg-red-200 hover:text-white">
+          <a href="#profile-link">Contact</a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <!-- Lab -->
+
+    <nav class="fixed w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between p-4">
+          <a href="#"
+            class="text-lg font-semibold tracking-widest uppercase rounded-lg text-royal-red dark-mode:text-white focus:outline-none focus:shadow-outline">Arturo
+            Rebolledo</a>
+          <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
         </div>
-      </section>
-      <div class="simple"></div>
-      <!-------Projects------------>
-      <!--TODO:Hacer buenas y responsives las columnas -->
-      <section
-        id="projects"
-        class="w-full h-screen px-6 projects-section-header"
-      >
-        <h2
-          id="project-title"
-          class="mx-auto text-3xl text-center font-primary text-royal-red"
-        >
-          Algunos De Mis Proyectos
-        </h2>
-        <div
-          class="grid justify-center grid-flow-row grid-cols-3 grid-rows-3 gap-4 mx-24 mt-6  gr custom-grid"
-        >
-          <div
-            class="flex bg-gray-400  hover:shadow-2xl h-60 col-sm rounded-3xl div1"
-          >
-            <a
-              href="#"
-              class="block w-11/12 p-2 mx-auto mb-4 text-center  bg-hueso place-self-end rounded-3xl"
-              >Ir Alla</a
-            >
+        <nav :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#welcome-section">Sobre Mi</a>
+          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl bg-transparent rounded-lg font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#project-title">Contact</a>
+          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl bg-transparent rounded-lg font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#profile-link">Work</a>
+        </nav>
+      </div>
+    </nav>
+
+    <!-- Lab -->
+
+    <!------Welcome Section------>
+    <section id="welcome-section" class="flex w-full min-h-screen">
+      <div class="flex-row px-2 mx-auto my-auto text-center md:px-64 place-self-center">
+        <h1 class="text-6xl fadeInDown text-royal-red font-primary md:text-9xl">
+          Arturo Rebolledo
+        </h1>
+        <p class="text-3xl italic font-thin fadIn text-normal text-good-gray">
+          Desarrollador Web
+        </p>
+      </div>
+    </section>
+    <div class="simple"></div>
+    <!-------Projects------------>
+    <!--TODO:Hacer buenas y responsives las columnas -->
+    <section id="projects" class="w-full min-h-screen px-6 md:max-h-screen md:h-screen projects-section-header">
+      <h2 id="project-tile" class="mx-auto text-3xl text-center project-tile font-primary text-royal-red">
+        Algunos De Mis Proyectos
+      </h2>
+      <div
+        x-data="{links: [{link: 'https://mraarquitectura.com', id:'0'},{link: 'http://freecodecamp.org', id:'1'},{link: 'http://freecodecamp.org', id:'2'},{link: 'http://freecodecamp.org', id:'3'},{link: 'http://freecodecamp.org', id:'4'},{link: 'http://freecodecamp.org', id:'5'}]}"
+        class="grid justify-center grid-flow-row grid-cols-1 gap-6 mx-12 mt-6 md:gap-4 md:mx-24 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
+
+        <template x-for="link in links" :key="link.id">
+          <div class="flex bg-gray-400 project-tile hover:shadow-2xl h-72 col-sm rounded-3xl " :class="'div'+ link.id">
+            <a x-bind:href="link.link" _target="_blank"
+              class="block w-11/12 p-2 mx-auto mb-4 text-center bg-hueso place-self-end rounded-3xl">Ir
+              Alla</a>
           </div>
-          <div
-            class="flex bg-gray-400 hover:shadow-2xl col-sm rounded-3xl div2"
-          >
-            <a
-              href="#"
-              class="block w-11/12 p-2 mx-auto mb-4 text-center  bg-hueso place-self-end rounded-3xl"
-              >Ir Alla</a
-            >
-          </div>
-          <div
-            class="flex items-center bg-gray-400  hover:shadow-2xl col-sm rounded-3xl div3"
-          >
-            <a
-              href="#"
-              class="block w-11/12 p-2 mx-auto mb-4 text-center  bg-hueso place-self-end rounded-3xl"
-              >Ir Alla</a
-            >
-          </div>
-          <div
-            class="flex bg-gray-400 hover:shadow-2xl col-sm rounded-3xl div4"
-          >
-            <a
-              href="#"
-              class="block w-11/12 p-2 mx-auto mb-4 text-center  bg-hueso place-self-end rounded-3xl"
-              >Ir Alla</a
-            >
-          </div>
-          <div
-            class="flex bg-gray-400 hover:shadow-2xl col-sm rounded-3xl div5"
-          >
-            <a
-              href="#"
-              class="block w-11/12 p-2 mx-auto mb-4 text-center  bg-hueso place-self-end rounded-3xl"
-              >Ir Alla</a
-            >
-          </div>
-          <div
-            class="flex bg-gray-400 hover:shadow-2xl col-sm rounded-3xl div6"
-          >
-            <a
-              href="#"
-              class="block w-11/12 p-2 mx-auto mb-4 text-center  bg-hueso place-self-end rounded-3xl"
-              >Ir Alla</a
-            >
-          </div>
-        </div>
-      </section>
-      <div class="simple"></div>
-      <!------Profile------>
-      <section id="profile-link" class="p-10 font-secondary x-pattern">
-        <h2
-          class="mx-auto mt-12 font-[500] text-center text-royal-red text-7xl"
-        >
-          Let's work together
-        </h2>
-        <div
-          class="flex flex-row justify-around mt-16 italic font-bold  text-whites"
-        >
-          <a href="github.com/Arturo2R" class="flex items-center"
-            ><i class="text-3xl text-black fa fa-github" aria-hidden="true"></i>
-            <h6 class="pl-2 text-xl font-bold text-royal-red">Github</h6></a
-          >
-          <a href="freecodecamp.com/Arturo2R" class="flex items-center"
-            ><i
-              class="text-3xl text-black fa fa-free-code-camp"
-              aria-hidden="true"
-            ></i>
-            <h6 class="pl-2 text-xl font-bold text-royal-red">
-              FreeCodeCamp
-            </h6></a
-          >
-          <a href="www.linkedin.com/in/arturo-rr117" class="flex items-center"
-            ><i
-              class="text-3xl text-black fa fa-linkedin"
-              aria-hidden="true"
-            ></i>
-            <h6 class="pl-2 text-xl font-bold text-royal-red">LinkedIn</h6></a
-          >
-          <a href="tel:+573196380755" class="flex items-center"
-            ><i class="text-3xl text-black fa fa-phone" aria-hidden="true"></i>
-            <h6 class="pl-2 text-xl font-bold text-royal-red">Call me</h6></a
-          >
-          <a href="mailto:elrayoarturopro@outlook.com" class="flex items-center"
-            ><i class="text-3xl text-black fa fa-inbox" aria-hidden="true"></i>
-            <h6 class="pl-2 text-2xl font-bold text-royal-red">
-              Send a mail
-            </h6></a
-          >
-        </div>
-      </section>
-    </main>
-    <footer
-      class="flex flex-col p-2 text-lg italic font-normal bg-gray-700 border-t-8 border-red-700 "
-    >
-      <p class="text-gray-400 mx-7">
-        For the projects of the HTML and CSS course in
-        <a href="https://freecodecamp.com" class="hover:gray-200"
-          >FreeCodeCamp.org</a
-        >
-      </p>
-      <h4 class="block mx-auto mt-3 text-gray-100">
-        ©2020 <span class="font-bold text-red-400">Arturo2R</span> made in
-        <qua style="color: rgb(255, 179, 0)">Quarantine</qua>
-      </h4>
-    </footer>
-  </body>
+        </template>
+
+
+      </div>
+    </section>
+    <div class="simple"></div>
+    <!------Profile------>
+    <section id="profile-link" class="p-10 mt-8 mb-12 font-secondary">
+      <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red text-7xl">
+        Let's work together...
+      </h2>
+      <div class="flex flex-row flex-wrap justify-around mt-16 italic font-bold md:flex-row text-whites">
+        <a href="github.com/Arturo2R" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i
+            class="text-3xl text-black fa fa-github" aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-royal-red">Github</h6>
+        </a>
+        <a id="profile-link" href="https://freecodecamp.com/Arturo2R" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-black fa fa-free-code-camp"
+            aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-royal-red">FreeCodeCamp</h6>
+        </a>
+        <a href="www.linkedin.com/in/arturo-rr117" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-black fa fa-linkedin"
+            aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-royal-red">LinkedIn</h6>
+        </a>
+        <a href="tel:+573196380755" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i
+            class="text-3xl text-black fa fa-phone" aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-royal-red">Call me</h6>
+        </a>
+        <a href="mailto:elrayoarturopro@outlook.com" target="_blank" class="flex items-center profile-link"><i
+            class="text-3xl text-black fa fa-inbox" aria-hidden="true"></i>
+          <h6 class="pl-2 text-2xl font-bold text-royal-red">Send a mail</h6>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-col p-2 text-lg italic font-normal border-t-8 border-red-700 x-pattern bg-hueso ">
+    <p class="text-gray-400 mx-7">
+      For the projects of the HTML and CSS course in
+      <a href="https://freecodecamp.com" class="hover:gray-200">FreeCodeCamp.org</a>
+    </p>
+    <h4 class="block mx-auto mt-3 text-gray-600">
+      ©2020 <span class="font-bold text-red-400">Arturo2R</span> made in
+      <qua style="color: rgb(255, 179, 0)">Quarantine</qua>
+    </h4>
+  </footer>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
 </html>

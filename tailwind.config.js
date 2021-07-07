@@ -7,7 +7,7 @@ module.exports = {
         "good-gray": "#96A6B8",
         hueso: "#FAF9F9",
         "bad-black": "#2A2938",
-        "dar-red": "#BB4E4D",
+        "dark-red": "#BB4E4D",
       },
       fontFamily: {
         primary: "'Cinzel Decorative', serif",
