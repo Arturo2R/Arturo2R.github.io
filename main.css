@@ -659,6 +659,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -669,14 +673,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
 }
 
 .block {
@@ -970,6 +966,11 @@ video {
 .text-red-400 {
   --tw-text-opacity: 1;
   color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgba(251, 191, 36, var(--tw-text-opacity));
 }
 
 .hover\:bg-red-200:hover {
