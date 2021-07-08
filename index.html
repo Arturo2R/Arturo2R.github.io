@@ -145,7 +145,7 @@
         <template x-for="link in links" :key="link.id">
           <div class="flex bg-gray-400 bg-center bg-cover project-tile hover:shadow-2xl h-72 col-sm rounded-3xl "
             :class="'div'+ link.id">
-            <a x-bind:href="link.link" _target="_blank"
+            <a x-bind:href="link.link" target="_blank"
               class="block w-11/12 p-2 mx-auto mb-4 text-center bg-hueso place-self-end rounded-3xl">Ir
               Alla</a>
           </div>
