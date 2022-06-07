@@ -8,18 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="./main.css" rel="stylesheet" />
+
+
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   <meta name="author" content="Arturo Rebolledo" />
   <!-- <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     /> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.4.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:ital,wght@1,200&family=Zilla+Slab:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
   <style>
+    h1 {
+      font-size: clamp(1rem, 17.1vw - 1.7rem, 8rem);
+    }
+
     .div0 {
       background-image: url(./img/MraArquitectura.png);
     }
@@ -44,9 +52,88 @@
       background-image: url(./img/Biography.png);
     }
 
+    .div6 {
+      background-image: url(./img/realState.png);
+    }
+
+    .div7 {
+      background-image: url(./img/socialU.png);
+    }
 
     .x-pattern {
       background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2396a6b8' fill-opacity='0.63' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    :root {
+      --bs-body-bg-rgb: 255, 255, 255;
+      --bs-primary-rgb: 29, 13, 253;
+      --bd-accent-rgb: 226, 41, 41;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      --bd-pink-rgb: 214, 51, 132;
+    }
+
+    .skljfs {
+      --primary: rgb(60, 32, 163);
+      --secundary: rgb(226, 41, 41);
+    }
+
+    .bg-gradiente {
+      background-image: linear-gradient(180deg,
+          rgba(var(--bs-body-bg-rgb), 0.01),
+          rgba(var(--bs-body-bg-rgb), 1) 85%),
+        radial-gradient(ellipse at top left,
+          rgba(var(--bs-primary-rgb), 0.5),
+          transparent 50%),
+        radial-gradient(ellipse at top right,
+          rgba(var(--bd-accent-rgb), 0.5),
+          transparent 50%),
+        radial-gradient(ellipse at center right,
+          rgba(var(--bd-violet-rgb), 0.5),
+          transparent 50%),
+        radial-gradient(ellipse at center left,
+          rgba(var(--bd-pink-rgb), 0.5),
+          transparent 50%);
+    }
+
+    .button-glass:hover {
+      /* From https://css.glass */
+      background: rgba(36, 87, 253, 0.24) !important;
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+      backdrop-filter: blur(5.5px) !important;
+      -webkit-backdrop-filter: blur(5.5px) !important;
+      border: 1px solid rgba(88, 20, 225, 0.356);
+    }
+
+    .bg-glass {
+      /* From https://css.glass */
+      background: rgba(36, 85, 253, 0.13);
+      /* border-radius: 16px; */
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6.8px);
+      -webkit-backdrop-filter: blur(6.8px);
+      border: 1px solid rgba(36, 85, 253, 0.05);
+    }
+
+    .art-button {
+      /* From https://css.glass */
+      /* From https://css.glass */
+      background: #080140e0;
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(6.5px);
+      border: 1px solid rgba(8, 1, 64, 0.3);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bs-body-bg-rgb: 1, 4, 29;
+      }
+
+      body {
+        background-color: #01041e;
+      }
     }
 
     @media (min-width: 768px) {
@@ -57,7 +144,7 @@
   </style>
 </head>
 
-<body>
+<body class="">
   <main>
     <!------NavBar------------------------------------->
     <!-- <nav class="z-10 flex items-center justify-between w-full p-4 bg-hueso nav" id="navbar" x-data="{isOpen: false}">
@@ -74,7 +161,7 @@
             font-secondary
           ">
         <li class="h-full p-1 hover:bg-red-200 hover:text-white">
-          <a href="#welcome-section">Sobre Mi</a>
+          <a href="#welcome-section">About Me</a>
         </li>
         <li class="h-full p-1 hover:bg-red-200 hover:text-white">
           <a href="#project-title">Work</a>
@@ -87,12 +174,12 @@
 
     <!-- Lab -->
 
-    <header id="navbar" class="fixed w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <header id="navbar" class="fixed z-30 w-full text-gray-700 bg-glass dark-mode:text-gray-200 dark-mode:bg-gray-800">
       <div x-data="{ open: false }"
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
           <a href="#"
-            class="text-lg font-semibold tracking-widest uppercase rounded-lg text-royal-red dark-mode:text-white focus:outline-none focus:shadow-outline">Arturo
+            class="text-lg font-semibold tracking-widest uppercase rounded-lg dark:text-sky-100 text-royal-red dark-mode:text-white focus:outline-none focus:shadow-outline">Arturo
             Rebolledo</a>
           <button title="toggle nav" type="button" class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
             @click="open = !open">
@@ -108,12 +195,12 @@
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
           class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-            href="#welcome-section">Sobre Mi</a>
-          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl bg-transparent rounded-lg font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-            href="#project-title">Contact</a>
-          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl bg-transparent rounded-lg font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-            href="#profile-link">Work</a>
+          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg button-glass font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#welcome-section">About Me</a>
+          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg font-secondary text-good-gray button-glass hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#projects">Work</a>
+          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg font-secondary text-good-gray button-glass hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -121,72 +208,88 @@
     <!-- Lab -->
 
     <!------Welcome Section------>
-    <section id="welcome-section" class="flex w-full min-h-screen">
-      <div class="flex-row px-2 mx-auto my-auto text-center md:px-64 place-self-center">
-        <h1 class="text-6xl animate__animated animate__fadeInDown text-royal-red font-primary md:text-9xl">
+    <section id="welcome-section" class="flex w-full min-h-screen bg-gradiente">
+      <div class="flex-row mx-auto my-auto text-center place-self-center">
+        <h1
+          class=" md:leading-[128px]  animate__animated animate__fadeInDown text-royal-red dark:text-hueso font-primary">
           Arturo Rebolledo
         </h1>
-        <p class="text-3xl italic font-thin animate__animated animate__fadIn text-normal text-good-gray">
-          Desarrollador Web
+        <p
+          class="text-3xl italic font-thin animate__animated animate__fadeIn text-normal text-dark-blue dark:text-royal-red">
+          Web Developer
         </p>
       </div>
     </section>
     <div class="simple"></div>
     <!-------Projects------------>
-    <!--TODO:Hacer buenas y responsives las columnas -->
-    <section id="projects" class="w-full min-h-screen px-6 md:max-h-screen md:h-screen projects-section-header">
-      <h2 id="project-tile" class="mx-auto text-3xl text-center project-tile font-primary text-royal-red">
-        Algunos De Mis Proyectos
+    <!--TODO:Hacer buenas y responsives las columnass -->
+    <section id="projects" class="w-full min-h-screen px-6 projects-section-header">
+      <h2 id="project-tile"
+        class="mx-auto text-3xl text-center animate__animated animate__fadeInBottomLeft project-tile font-primary text-royal-red dark:text-hueso">
+        These Are Some Of My Projects
       </h2>
       <div
-        x-data="{links: [{link: 'https://mraarquitectura.com', id:'0'},{link: 'https://cdpn.io/Arturo2R/debug/pooZOLB/RBAOJRzGNdZr', id:'1'},{link: 'https://cdpn.io/Arturo2R/debug/pogoJxJ/DqkDdYLyEmBk', id:'2'},{link: 'https://cdpn.io/Arturo2R/debug/XWJydyZ/dXAqBapwZzRk', id:'3'},{link: 'https://arturo2r.github.io/PersonalPortfolio/', id:'4'},{link: 'https://cdpn.io/Arturo2R/debug/bGdOBrg/YvMgOwoyPBnM ', id:'5'}]}"
-        class="grid justify-center grid-flow-row grid-cols-1 gap-6 mx-12 mt-6 md:gap-4 md:mx-24 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
-
+        x-data="{links: [{link: 'https://social-u.vercel.app', id: '7', name: 'Social Media App'},{link: 'https://casasluzka.netlify.app', id: '6', name: 'Real State Agencie Website'}, {link: 'https://mraarquitectura.com.co', id:'0', name: 'Furniture Agencie Website'},{link: 'https://cdpn.io/Arturo2R/debug/pooZOLB/RBAOJRzGNdZr', id:'1', name: 'Guitar Store Landing Page'},{link: 'https://cdpn.io/Arturo2R/debug/pogoJxJ/DqkDdYLyEmBk', id:'2', name: 'Documentation Website'},{link: 'https://cdpn.io/Arturo2R/debug/XWJydyZ/dXAqBapwZzRk', id:'3', name: 'Form Survey'},{link: 'https://arturo2r.github.io/PersonalPortfolio/', id:'4', name: 'Personal Portfolio'},{link: 'https://cdpn.io/Arturo2R/debug/bGdOBrg/YvMgOwoyPBnM ', id:'5', name: 'Tribute Page'}]}"
+        class="grid justify-center grid-flow-row grid-cols-1 gap-6 mx-4 mt-6 md:gap-y-8 md:gap-x-12 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
         <template x-for="link in links" :key="link.id">
-          <div class="flex bg-gray-400 bg-center bg-cover project-tile hover:shadow-2xl h-72 col-sm rounded-3xl "
-            :class="'div'+ link.id">
-            <a x-bind:href="link.link" target="_blank"
-              class="block w-11/12 p-2 mx-auto mb-4 text-center bg-hueso place-self-end rounded-3xl">Ir
-              Alla</a>
-          </div>
+          <a x-bind:href="link.link" target="_blank">
+            <div
+              class="flex bg-gray-400 bg-center bg-cover project-tile hover:shadow-2xl dark:hover:shadow-sky-500/50 h-72 col-sm rounded-3xl"
+              :class="'div'+ link.id">
+              <div
+                class="block w-11/12 p-2 mx-auto mb-4 text-center text-gray-400 uppercase art-button place-self-end rounded-3xl">
+                <span x-text="link.name"></span>
+              </div>
+            </div>
+          </a>
         </template>
-
-
       </div>
     </section>
     <div class="simple"></div>
     <!------Profile------>
-    <section class="p-10 mt-8 mb-12 font-secondary">
-      <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red text-7xl">
-        Let's work together...
+    <section id="contact" class="p-10 mt-8 mb-12 font-secondary">
+      <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red dark:text-sky-200 text-5xl md:text-7xl ">
+        Lets work together...
       </h2>
       <div class="flex flex-row flex-wrap justify-around mt-16 italic font-bold md:flex-row text-whites">
-        <a href="https://github.com/Arturo2R" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i
-            class="text-3xl text-black fa fa-github" aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-royal-red">Github</h6>
-        </a>
-        <a id="profile-link" href="https://freecodecamp.com/Arturo2R" target="_blank"
-          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-black fa fa-free-code-camp"
+        <a rel="noopener" href="https://github.com/Arturo2R" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-github"
             aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-royal-red">FreeCodeCamp</h6>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            Github
+          </h6>
         </a>
-        <a href="https://www.linkedin.com/in/arturo-rr117" target="_blank"
-          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-black fa fa-linkedin"
+        <a rel="noopener" id="profile-link" href="https://freecodecamp.com/Arturo2R" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-free-code-camp"
             aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-royal-red">LinkedIn</h6>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            FreeCodeCamp
+          </h6>
         </a>
-        <a href="tel:+57000000" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i
-            class="text-3xl text-black fa fa-phone" aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-royal-red">Call me</h6>
+        <a rel="noopener" href="https://www.linkedin.com/in/arturo2r" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-linkedin"
+            aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            LinkedIn
+          </h6>
         </a>
-        <a href="mailto:elrayoarturopro@outlook.com" target="_blank" class="flex items-center profile-link"><i
-            class="text-3xl text-black fa fa-inbox" aria-hidden="true"></i>
-          <h6 class="pl-2 text-2xl font-bold text-royal-red">Send a mail</h6>
+        <a href="tel:+573043473707" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i
+            class="text-3xl text-royal-red fa fa-phone" aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            Call me
+          </h6>
+        </a>
+        <a href="mailto:arturoreb2r@outlook.com" target="_blank" class="flex items-center profile-link"><i
+            class="text-3xl text-royal-red fa fa-inbox" aria-hidden="true"></i>
+          <h6 class="pl-2 text-2xl font-bold text-dark-blue dark:text-hueso">
+            Send a mail
+          </h6>
         </a>
       </div>
     </section>
   </main>
-  <footer class="flex flex-col p-2 text-lg italic font-normal border-t-8 border-red-700 x-pattern bg-hueso ">
+  <footer
+    class="flex flex-col p-2 text-lg italic font-normal border-t-8 border-dark-blue x-pattern bg-hueso dark:bg-deep-blue">
     <p class="text-gray-400 mx-7">
       For the projects of the HTML and CSS course in
       <a href="https://freecodecamp.com" class="hover:gray-200">FreeCodeCamp.org</a>
@@ -197,7 +300,7 @@
     </h4>
   </footer>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
 </html>

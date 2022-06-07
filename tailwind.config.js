@@ -8,6 +8,8 @@ module.exports = {
         hueso: "#FAF9F9",
         "bad-black": "#2A2938",
         "dark-red": "#BB4E4D",
+        "dark-blue": "#080140e0",
+        "deep-blue": "#01041e",
       },
       fontFamily: {
         primary: "'Cinzel Decorative', serif",
