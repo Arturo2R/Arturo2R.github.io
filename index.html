@@ -192,6 +192,7 @@
                 clip-rule="evenodd"></path>
             </svg>
           </button>
+          <dark-mode-toggle></dark-mode-toggle>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
           class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
@@ -249,9 +250,9 @@
     <!------Profile------>
     <section id="contact" class="p-10 mt-8 mb-12 font-secondary">
       <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red dark:text-sky-200 text-5xl md:text-7xl ">
-        Lets work together...
+        Let's work together...
       </h2>
-      <div class="flex flex-row flex-wrap justify-around mt-16 italic font-bold md:flex-row text-whites">
+      <div class="flex flex-col flex-wrap justify-around mt-16 italic font-bold md:flex-row text-whites">
         <a rel="noopener" href="https://github.com/Arturo2R" target="_blank"
           class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-github"
             aria-hidden="true"></i>
@@ -299,6 +300,8 @@
       <qua class="text-yellow-400">Quarantine</qua>
     </h4>
   </footer>
+  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+  <script src="./main.js"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
