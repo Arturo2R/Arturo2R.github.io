@@ -1,0 +1,98 @@
+{
+  "frame_8": {
+    "group_1": {
+      "c_v_letter": {
+        "side_col": {
+          "content": {
+            "side_col_section": {
+              "label": "Languages",
+              "description": "Spanish - Native\nEnglish - Conversational\nPortuguese - Read \n"
+            }
+          }
+        },
+        "main_col": {
+          "content": {
+            "intro": {
+              "section_heading": {
+                "label": "Summary"
+              },
+              "description": "Passionate about learning, and discovering new ways of making businesses more attractive and efficient to  users with web and mobile technologies. Highly proficient in the latest industry trends, tools, and processes. I´d like to work for a company with a strong vision of making the global economy more dinamic. "
+            },
+            "work_section_first": {
+              "frame_3": {
+                "section_heading": {
+                  "label": "Proyects"
+                },
+                "frame_1": {
+                  "frame_4": {
+                    "description": "March 2022 "
+                  },
+                  "description": "social-u.vercel.app\nDevelopment of a social media web for the students of the Universidad Del Norte .  Learned how to handle user generated content and the app livecycle. Used NextJS, Firebase and Tailwind for styles."
+                }
+              }
+            },
+            "history": {
+              "work_section_first": {
+                "frame_3": {
+                  "section_heading": {
+                    "label": "Proyects"
+                  },
+                  "frame_1": {
+                    "frame_4": {
+                      "description": "May 2020 "
+                    },
+                    "description": "mraarquitectura.com.co\nDesign of the website\nDevelopment of the website with Bootstrap\nImplemented best practices for web performance\nCreated and implemented SEO strategy"
+                  }
+                }
+              }
+            },
+            "education": {
+              "frame_3": {
+                "section_heading": {
+                  "label": "EDUcation"
+                },
+                "frame_1": {
+                  "frame_4": {
+                    "description": "May 2019 - July 2021"
+                  },
+                  "description": "FreeCodeCamp - San Diego"
+                }
+              }
+            },
+            "work_section_second": {
+              "frame_3": {
+                "section_heading": {
+                  "label": "Label"
+                },
+                "frame_1": {
+                  "frame_4": {
+                    "description": "Aug 2020 – Dec 2021"
+                  },
+                  "description": "Platzi - San Francisco"
+                }
+              }
+            },
+            "frame_3": {
+              "section_heading": {
+                "label": "Label"
+              },
+              "frame_1": {
+                "frame_4": {
+                  "description": "Jul 2021 – Present"
+                },
+                "description": "Universidad Del Norte - Barranquilla"
+              }
+            }
+          }
+        },
+        "header": {
+          "title": "Frontend Software Engineer - React",
+          "name": "Arturo Rebolledo"
+        },
+        "footer": {
+          "description": "*Temporary"
+        }
+      }
+    }
+  }
+}
