@@ -1,14 +1,17 @@
 {
   "name": "PersonalPortfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "repository": "git@github.com:Arturo2R/PersonalPortfolio.git",
   "author": "Arturo Rebolledo <elrayoarturopro@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "@fontsource/cinzel-decorative": "^4.5.8",
     "tailwindcss": "^2.2.4"
   },
   "scripts": {
     "build:css": "tailwindcss -o ./main.css --jit --purge './*.html' -w"
-  }
+  },
+  "description": "The personal portfolio website of Arturo Rebolledo",
+  "private": true
 }

@@ -23,6 +23,11 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@fontsource/cinzel-decorative@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/cinzel-decorative/-/cinzel-decorative-4.5.8.tgz#752507d38e92e19adac394e495b9d6efe9b9e864"
+  integrity sha512-lwF7AuSWqWvTKk+o7NoCtxdHYuj6TeFuPLC5hzdpHexqDcUR7sqZnbcWlf36wuFoKcF18YmnTGKCakRnzgd5bg==
+
 "@fullhuman/postcss-purgecss@^4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-4.0.3.tgz#55d71712ec1c7a88e0d1ba5f10ce7fb6aa05beb4"
