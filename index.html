@@ -30,26 +30,25 @@
   <meta name="twitter:site" content="@_aturo2r">
   <meta name="twitter:description" content="Talent Frontend Web Developer Engineer based in COlombia">
 
-
-
-
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="./main.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./fonts.css">
-  <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./fonts.css">
+  <link href="./main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css">
   <!-- <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     /> -->
 
+
+
 </head>
 
-<body class="dark:bg-deep-blue ">
+<body class="dark:bg-deep-blue">
   <main>
     <!------NavBar------------------------------------->
-    <!-- <nav class="z-10 flex items-center justify-between w-full p-4 bg-hueso nav" id="navbar" x-data="{isOpen: false}">
+    <!-- <nav class="flex z-10 justify-between items-center p-4 w-full bg-hueso nav" id="navbar" x-data="{isOpen: false}">
       <img src="" alt="Logo" class="mx-auto md:m-0" />
       <button class="md:hidden" @click="console.log('Esta abierto careverga');">
         x
@@ -62,13 +61,13 @@
             text-good-gray
             font-secondary
           ">
-        <li class="h-full p-1 hover:bg-red-200 hover:text-white">
+        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
           <a href="#welcome-section">About Me</a>
         </li>
-        <li class="h-full p-1 hover:bg-red-200 hover:text-white">
+        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
           <a href="#project-title">Work</a>
         </li>
-        <li class="h-full p-1 hover:bg-red-200 hover:text-white">
+        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
           <a href="#profile-link">Contact</a>
         </li>
       </ul>
@@ -78,8 +77,8 @@
 
     <header id="navbar" class="fixed z-30 w-full text-gray-700 bg-glass dark-mode:text-gray-200 dark-mode:bg-gray-800">
       <div x-data="{ open: false }"
-        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-        <div class="flex flex-row items-center justify-between p-4">
+        class="flex flex-col px-4 mx-auto max-w-screen-xl md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row justify-between items-center p-4">
           <a href="#"
             class="text-lg font-semibold tracking-widest uppercase rounded-lg dark:text-sky-100 text-royal-red dark-mode:text-white focus:outline-none focus:shadow-outline">Arturo
             Rebolledo</a>
@@ -100,12 +99,12 @@
           </label> -->
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
-          class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg button-glass font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          class="hidden flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+          <a class="p-1 px-4 py-2 mt-2 h-full text-2xl rounded-lg button-glass font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="#welcome-section">About Me</a>
-          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg font-secondary text-good-gray button-glass hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          <a class="p-1 px-4 py-2 mt-2 h-full text-2xl rounded-lg font-secondary text-good-gray button-glass hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="#projects">Work</a>
-          <a class="h-full p-1 px-4 py-2 mt-2 text-2xl rounded-lg font-secondary text-good-gray button-glass hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          <a class="p-1 px-4 py-2 mt-2 h-full text-2xl rounded-lg font-secondary text-good-gray button-glass hover:text-hueso hover:bg-red-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="#contact">Contact</a>
         </nav>
       </div>
@@ -114,8 +113,8 @@
     <!-- Lab -->
 
     <!------Welcome Section------>
-    <section id="welcome-section" class="flex w-full min-h-screen  bg-gradiente">
-      <div class="flex-row mx-auto my-auto text-center place-self-center">
+    <section id="welcome-section" class="flex w-full min-h-screen bg-gradiente">
+      <div class="flex-row place-self-center mx-auto my-auto text-center">
         <h1
           class=" md:leading-[128px]  animate__animated animate__fadeInDown text-royal-red dark:text-hueso font-primary">
           Arturo<br> Rebolledo
@@ -129,21 +128,21 @@
     <div class="simple"></div>
     <!-------Projects------------>
     <!--TODO:Hacer buenas y responsives las columnass -->
-    <section id="projects" class="w-full min-h-screen px-6 projects-section-header">
+    <section id="projects" class="px-6 w-full min-h-screen projects-section-header">
       <h2 id="project-tile"
         class="mx-auto text-3xl text-center animate__animated animate__fadeInBottomLeft project-tile font-primary text-royal-red dark:text-hueso">
         These Are Some Of My Projects
       </h2>
       <div
         x-data="{links: [{link: 'https://social-u.vercel.app', id: '7', name: 'Social Media App'},{link: 'https://casasluzka.netlify.app', id: '6', name: 'Real State Agencie Website'}, {link: 'https://mraarquitectura.com.co', id:'0', name: 'Furniture Agencie Website'},{link: 'https://codepen.io/Arturo2R/full/pooZOLB/', id:'1', name: 'Guitar Store Landing Page'},{link: 'https://codepen.io/Arturo2R/full/pogoJxJ/', id:'2', name: 'Documentation Website'},{link: 'https://codepen.io/Arturo2R/full/XWJydyZ/', id:'3', name: 'Form Survey'},{link: 'https://arturo2r.github.io/PersonalPortfolio/', id:'4', name: 'Personal Portfolio'},{link: 'https://codepen.io/Arturo2R/full/bGdOBrg/ ', id:'5', name: 'Tribute Page'}]}"
-        class="grid justify-center grid-flow-row grid-cols-1 gap-6 mx-4 mt-6 md:gap-y-8 md:gap-x-12 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
+        class="grid grid-cols-1 grid-flow-row gap-6 justify-center mx-4 mt-6 md:gap-y-8 md:gap-x-12 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
         <template x-for="link in links" :key="link.id">
           <a x-bind:href="link.link" target="_blank">
             <div
-              class="flex article bg-gray-400 bg-center bg-cover project-tile hover:shadow-2xl dark:hover:shadow-sky-500/50 h-72 col-sm rounded-3xl"
+              class="flex h-72 bg-gray-400 bg-center bg-cover rounded-3xl article project-tile hover:shadow-2xl dark:hover:shadow-sky-500/50 col-sm"
               :class="'div'+ link.id">
               <div
-                class="block w-11/12 p-2 mx-auto mb-4 text-center text-gray-400 uppercase art-button place-self-end rounded-3xl">
+                class="block place-self-end p-2 mx-auto mb-4 w-11/12 text-center text-gray-400 uppercase rounded-3xl art-button">
                 <span x-text="link.name"></span>
               </div>
             </div>
@@ -157,7 +156,7 @@
       <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red dark:text-sky-200 text-5xl md:text-7xl ">
         Let's work together...
       </h2>
-      <div class="flex flex-col sm:flex-row flex-wrap justify-around mt-16 italic font-bold text-whites">
+      <div class="flex flex-col flex-wrap justify-around mt-16 italic font-bold sm:flex-row text-whites">
         <a rel="noopener" href="https://github.com/Arturo2R" target="_blank"
           class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-github"
             aria-hidden="true"></i>
@@ -196,18 +195,62 @@
   </main>
   <footer
     class="flex flex-col p-2 text-lg italic font-normal border-t-8 border-dark-blue x-pattern bg-hueso dark:bg-deep-blue">
-    <!-- <p class="text-gray-400 mx-7">
+    <!-- <p class="mx-7 text-gray-400">
       For the projects of the HTML and CSS course in
       <a href="https://freecodecamp.com" class="hover:gray-200">FreeCodeCamp.org</a>
     </p> -->
     <h4 class="block mx-auto mt-3 text-gray-600">
-      ©2022 <span class="font-bold text-red-400 ">Arturo2R</span> Initially made in
+      ©2022 <span class="font-bold text-red-400">Arturo2R</span> Initially made in
       <qua class="text-yellow-400">Quarantine</qua>
     </h4>
   </footer>
   <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
-  <script src="./main.js"></script>
-  <script src="https://unpkg.com/alpinejs" defer></script>
+  <!-- <script src="./main.js"></script> -->
+  <script fetchpriority="high" src="https://unpkg.com/alpinejs" defer></script>
+  <script fetchpriority="low" type="text/javascript">
+    (function (e, t) {
+      var n = e.amplitude || { _q: [], _iq: {} }; var r = t.createElement("script")
+        ; r.type = "text/javascript"
+        ; r.integrity = "sha384-+EO59vL/X7v6VE2s6/F4HxfHlK0nDUVWKVg8K9oUlvffAeeaShVBmbORTC2D3UF+"
+        ; r.crossOrigin = "anonymous"; r.async = true
+        ; r.src = "https://cdn.amplitude.com/libs/amplitude-8.17.0-min.gz.js"
+        ; r.onload = function () {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK")
+          }
+        }
+        ; var i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i)
+        ; function s(e, t) {
+          e.prototype[t] = function () {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0))); return this
+          }
+        }
+      var o = function () { this._q = []; return this }
+        ; var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset", "preInsert", "postInsert", "remove"]
+        ; for (var c = 0; c < a.length; c++) { s(o, a[c]) } n.Identify = o; var u = function () {
+          this._q = []
+            ; return this
+        }
+        ; var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"]
+        ; for (var p = 0; p < l.length; p++) { s(u, l[p]) } n.Revenue = u
+        ; var d = ["init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut", "setVersionName", "setDomain", "setDeviceId", "enableTracking", "setGlobalUserProperties", "identify", "clearUserProperties", "setGroup", "logRevenueV2", "regenerateDeviceId", "groupIdentify", "onInit", "logEventWithTimestamp", "logEventWithGroups", "setSessionId", "resetSessionId"]
+        ; function v(e) {
+          function t(t) {
+            e[t] = function () {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }
+          for (var n = 0; n < d.length; n++) { t(d[n]) }
+        } v(n); n.getInstance = function (e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase()
+            ; if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+              n._iq[e] = { _q: [] }; v(n._iq[e])
+            } return n._iq[e]
+        }; e.amplitude = n
+    })(window, document);
+
+    amplitude.getInstance().init("0e78d525cf44dde489244f29d8bcbced");
+  </script>
   <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
