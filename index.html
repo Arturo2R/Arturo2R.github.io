@@ -137,13 +137,13 @@
     <div class="simple"></div>
     <!-------Projects------------>
     <!--TODO:Hacer buenas y responsives las columnass -->
-    <section id="projects" class="px-6 w-full min-h-screen projects-section-header">
+    <section id="projects" class="px-6 w-full min-h-screen projects-section-headero">
       <h2 id="project-tile"
         class="mx-auto text-3xl text-center animate__animated animate__fadeInBottomLeft project-tile font-primary text-royal-red dark:text-hueso">
         These Are Some Of My Projects
       </h2>
       <div
-        x-data="{links: [{link: 'https://social-u.vercel.app', id: '7', name: 'Social Media App'},{link: 'https://casasluzka.netlify.app', id: '6', name: 'Real State Agencie Website'}, {link: 'https://mraarquitectura.com.co', id:'0', name: 'Furniture Agencie Website'},{link: 'https://codepen.io/Arturo2R/full/pooZOLB/', id:'1', name: 'Guitar Store Landing Page'},{link: 'https://codepen.io/Arturo2R/full/pogoJxJ/', id:'2', name: 'Documentation Website'},{link: 'https://codepen.io/Arturo2R/full/XWJydyZ/', id:'3', name: 'Form Survey'},{link: 'https://arturo2r.github.io/PersonalPortfolio/', id:'4', name: 'Personal Portfolio'},{link: 'https://codepen.io/Arturo2R/full/bGdOBrg/ ', id:'5', name: 'Tribute Page'}]}"
+        x-data="{links: [{link: 'https://social-u.vercel.app', id: '7', name: 'Social Media App'},{link: 'https://casasluzka.netlify.app', id: '6', name: 'Real State Agencie Website'}, {link: 'https://mraarquitectura.com.co', id:'0', name: 'Furniture Agencie Website'},{link: 'https://codepen.io/Arturo2R/full/pooZOLB/', id:'1', name: 'Guitar Store Landing Page'},{link: 'https://codepen.io/Arturo2R/full/pogoJxJ/', id:'2', name: 'Documentation Website'},{link: 'https://codepen.io/Arturo2R/full/XWJydyZ/', id:'3', name: 'Form Survey'},{link: 'https://arturo2r.github.io/PersonalPortfolio/', id:'4', name: 'Personal Portfolio'}]}"
         class="grid grid-cols-1 grid-flow-row gap-6 justify-center mx-4 mt-6 md:gap-y-8 md:gap-x-12 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
         <template x-for="link in links" :key="link.id">
           <a x-bind:href="link.link" target="_blank">
