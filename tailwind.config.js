@@ -1,5 +1,9 @@
 module.exports = {
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class',
+  content: [
+    './public/**/*.html',
+    './src/**/*.{astro,js,jsx,ts,tsx,vue}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -16,6 +20,7 @@ module.exports = {
         secondary: "'Zilla Slab', serif",
         normal: "'Poppins', sans-serif",
       },
+
     },
   },
 };

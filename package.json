@@ -1,17 +1,30 @@
 {
-  "name": "PersonalPortfolio",
-  "version": "1.0.0",
-  "main": "main.js",
-  "repository": "git@github.com:Arturo2R/PersonalPortfolio.git",
-  "author": "Arturo Rebolledo <elrayoarturopro@outlook.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@fontsource/cinzel-decorative": "^4.5.8",
-    "tailwindcss": "^2.2.4"
-  },
-  "scripts": {
-    "build:css": "tailwindcss -o ./main.css --jit --purge './*.html' -w"
-  },
-  "description": "The personal portfolio website of Arturo Rebolledo",
-  "private": true
+	"name": "personal-portfolio",
+	"version": "1.0.0",
+	"main": "main.js",
+	"repository": "git@github.com:Arturo2R/PersonalPortfolio.git",
+	"author": "Arturo Rebolledo <elrayoarturopro@outlook.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@fontsource/cinzel-decorative": "^4.5.8",
+		"alpinejs": "^3.10.2",
+		"astro": "^1.0.0-beta.44",
+		"astro-analytics": "^2.1.1",
+		"tailwindcss": "^3.1.2"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"build:css": "tailwindcss -o ./main.css --jit --purge './*.html' -w"
+	},
+	"description": "The personal portfolio website of Arturo Rebolledo",
+	"private": true,
+	"devDependencies": {
+		"@astrojs/svelte": "^0.1.4",
+		"@astrojs/tailwind": "^0.2.1",
+		"svelte": "^3.46.4"
+	}
 }
