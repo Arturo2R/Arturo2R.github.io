@@ -1,11 +1,9 @@
 ---
 import "../styles/fonts.css"
-// import "../styles/tailwind.css"
 import "../styles/styles.css"
 import Navbar from "../components/Navbar.astro"
 import Footer from "../components/Footer.astro"
 
-import { GoogleAnalytics } from 'astro-analytics';
 ---
 
 <html lang="en" class="dark">
@@ -54,9 +52,16 @@ import { GoogleAnalytics } from 'astro-analytics';
     import Alpine from 'alpinejs';
     window.Alpine = Alpine;
     Alpine.start();
+    // import { Application } from '@splinetool/runtime';
+
+    // const canvas = document.getElementById('canvas3d');
+    // const app = new Application(canvas);
+    // app.load('https://prod.spline.design/FcbbyRrRW4Y5GsSx/scene.splinecode');
+
+
   </script>
 
-  <GoogleAnalytics id="G-1FS52X9WVF" />
+  <!-- <GoogleAnalytics id="G-1FS52X9WVF" /> -->
 
 </head>
 
@@ -90,8 +95,8 @@ import { GoogleAnalytics } from 'astro-analytics';
 
     <!-- Lab -->
 
-    <Navbar links={[{label:"About Me", link:"#welcome-section"},{label: "Projects" ,
-      link:"#projects"},{label: "Contact Me" , link:"#contact"}]} />
+    <Navbar links={[{label:"About Me", link:"#welcome-section"},{label: "Projects"
+      ,link:"#projects"},{label: "Contact Me" , link:"#contact"}]} />
 
     <!-- Lab -->
 
@@ -99,7 +104,7 @@ import { GoogleAnalytics } from 'astro-analytics';
     <section id="welcome-section" class="flex w-full min-h-screen bg-gradiente">
       <div class="flex-row place-self-center mx-auto my-auto text-center">
         <h1
-          class="no-h1 md:leading-[128px]  animate__animated animate__fadeInDown text-royal-red dark:text-hueso font-primary">
+          class="no-h1  md:leading-[128px]  animate__animated animate__fadeInDown text-royal-red dark:text-hueso font-primary">
           Arturo<br> Rebolledo
         </h1>
         <p
@@ -108,7 +113,14 @@ import { GoogleAnalytics } from 'astro-analytics';
         </p>
       </div>
     </section>
-    <div class="simple"></div>
+
+    <!-- <Hycosaedron /> -->
+
+    <!-- <canvas id="canvas3d" class="mx-auto w-full h-60" /> -->
+
+    <!-- <iframe src='https://my.spline.design/untitled-5b04123bb5070f563b8858fa7f888a48/' frameborder='0' width='300px'
+      height='300px'></iframe> -->
+    <!-- <div class="simple"></div> -->
     <!-------Projects------------>
     <!--TODO:Hacer buenas y responsives las columnass -->
     <section id="projects" class="px-6 w-full min-h-screen projects-section-headero">

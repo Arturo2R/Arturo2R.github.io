@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <title>Arturo Rebolledo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
+  <meta name="author" content="Arturo Rebolledo">
+
+  <!-- SEO -->
+  <meta name="title" content="Arturo Rebolledo">
+  <meta name="description" content="Talent Frontend Web Developer Engineer based in COlombia">
+  <meta name="keywords" content="d">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!--OpenGraph-->
+  <meta property="og:title" content="Arturo Rebolledo Dev Portfolio">
+  <meta property="og:site_name" content="Arturo Rebolledo Dev Portfolio">
+  <meta property="og:url" content="arturo2r.me">
+  <meta property="og:description" content="Talent Frontend Web Developer Engineer based in COlombia">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/img/realState.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@_aturo2r">
+  <meta name="twitter:description" content="Talent Frontend Web Developer Engineer based in COlombia">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/style/fonts.css"> -->
+  <!-- <link href="./main.css" rel="stylesheet" /> -->
+  <!-- <link rel="stylesheet" href="./styles.css"> -->
+  <!-- <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+
+  
+
+  <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-1FS52X9WVF"></script>
+<script>let id = "G-1FS52X9WVF";
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', id);
+</script>
+
+
+<link rel="stylesheet" href="/assets/asset.11b6a099.css" /><script type="module" src="/entry.d2b03042.js"></script>
+</head>
+
+<body class="dark:bg-deep-blue">
+  <main>
+    <!------NavBar------------------------------------->
+    <!-- <nav class="flex z-10 justify-between items-center p-4 w-full bg-hueso nav" id="navbar" x-data="{isOpen: false}">
+      <img src="" alt="Logo" class="mx-auto md:m-0" />
+      <button class="md:hidden" @click="console.log('Esta abierto careverga');">
+        x
+      </button>
+      <ul class="
+            hidden
+            md:flex md:flex-row md:justify-between md:w-2/5
+            text-3xl
+            font-[500]
+            text-good-gray
+            font-secondary
+          ">
+        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
+          <a href="#welcome-section">About Me</a>
+        </li>
+        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
+          <a href="#project-title">Work</a>
+        </li>
+        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
+          <a href="#profile-link">Contact</a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <!-- Lab -->
+
+    <header id="navbar" class="fixed h-[60px] z-30 w-full text-gray-700 bg-glass dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col px-4 mx-auto max-w-screen-xl md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="flex flex-row justify-between items-center p-4">
+      <a href="#" class="text-lg font-semibold tracking-widest uppercase rounded-lg dark:text-sky-100 text-royal-red dark-mode:text-white focus:outline-none focus:shadow-outline">Arturo
+        Rebolledo</a>
+      <button title="toggle nav" type="button" class="rounded-lg dark:text-sky-600 md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <!-- <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme">
+          </label> -->
+    </div>
+
+    <nav :class="{'flex': open, 'hidden': !open}" class="hidden flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+      <a class="p-1 px-4 py-2 mt-2 h-full text-2xl rounded-lg button-glass font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#welcome-section">About Me</a><a class="p-1 px-4 py-2 mt-2 h-full text-2xl rounded-lg button-glass font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#projects">Projects</a><a class="p-1 px-4 py-2 mt-2 h-full text-2xl rounded-lg button-glass font-secondary text-good-gray hover:text-hueso hover:bg-red-200 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode: dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#contact">Contact Me</a>
+
+    </nav>
+  </div>
+</header>
+
+    <!-- Lab -->
+
+    <!------Welcome Section------>
+    <section id="welcome-section" class="flex w-full min-h-screen bg-gradiente">
+      <div class="flex-row place-self-center mx-auto my-auto text-center">
+        <h1 class="no-h1 md:leading-[128px]  animate__animated animate__fadeInDown text-royal-red dark:text-hueso font-primary">
+          Arturo<br> Rebolledo
+        </h1>
+        <p class="text-3xl italic font-thin animate__animated animate__fadeIn text-normal text-dark-blue dark:text-royal-red">
+          Web Developer
+        </p>
+      </div>
+    </section>
+    <div class="simple"></div>
+    <!-------Projects------------>
+    <!--TODO:Hacer buenas y responsives las columnass -->
+    <section id="projects" class="px-6 w-full min-h-screen projects-section-headero">
+      <h2 id="project-tile" class="mx-auto text-3xl text-center animate__animated animate__fadeInBottomLeft project-tile font-primary text-royal-red dark:text-hueso">
+        These Are Some Of My Projects
+      </h2>
+      <div x-data="{links: [{link: 'https://social-u.vercel.app', id: '7', name: 'Social Media App'},{link: 'https://casasluzka.netlify.app', id: '6', name: 'Real State Agencie Website'}, {link: 'https://mraarquitectura.com.co', id:'0', name: 'Furniture Agencie Website'},{link: 'https://codepen.io/Arturo2R/full/pooZOLB/', id:'1', name: 'Guitar Store Landing Page'},{link: 'https://codepen.io/Arturo2R/full/pogoJxJ/', id:'2', name: 'Documentation Website'},{link: 'https://codepen.io/Arturo2R/full/XWJydyZ/', id:'3', name: 'Form Survey'},{link: 'https://arturo2r.github.io/PersonalPortfolio/', id:'4', name: 'Personal Portfolio'}]}" class="grid grid-cols-1 grid-flow-row gap-6 justify-center mx-4 mt-6 md:gap-y-8 md:gap-x-12 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
+        <template x-for="link in links" :key="link.id">
+          <a x-bind:href="link.link" target="_blank">
+            <div class="flex h-72 bg-gray-400 bg-center bg-cover rounded-3xl article project-tile hover:shadow-2xl dark:hover:shadow-sky-500/50 col-sm" :class="'div'+ link.id">
+              <div class="block place-self-end p-2 mx-auto mb-4 w-11/12 text-center text-gray-400 uppercase rounded-3xl art-button">
+                <span x-text="link.name"></span>
+              </div>
+            </div>
+          </a>
+        </template>
+      </div>
+    </section>
+    <div class="simple"></div>
+    <!------Profile------>
+    <section id="contact" class="p-10 mt-8 mb-12 font-secondary">
+      <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red dark:text-sky-200 text-5xl md:text-7xl ">
+        Let's work together...
+      </h2>
+      <div class="flex flex-col flex-wrap justify-around mt-16 italic font-bold sm:flex-row text-whites">
+        <a rel="noopener" href="https://github.com/Arturo2R" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-github" aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            Github
+          </h6>
+        </a>
+        <!-- <a rel="noopener" id="profile-link" href="https://freecodecamp.com/Arturo2R" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-free-code-camp"
+            aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            FreeCodeCamp
+          </h6>
+        </a> -->
+        <a rel="noopener" href="https://www.linkedin.com/in/arturo2r" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-linkedin" aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            LinkedIn
+          </h6>
+        </a>
+        <a href="tel:+573043473707" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-phone" aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            Call me
+          </h6>
+        </a>
+        <a href="mailto:arturoreb2r@outlook.com" target="_blank" class="flex items-center profile-link"><i class="text-3xl text-royal-red fa fa-inbox" aria-hidden="true"></i>
+          <h6 class="pl-2 text-2xl font-bold text-dark-blue dark:text-hueso">
+            Send a mail
+          </h6>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="flex flex-col p-2 text-lg italic font-normal border-t-8 border-dark-blue x-pattern bg-hueso dark:bg-deep-blue">
+    <!-- <p class="mx-7 text-gray-400">
+      For the projects of the HTML and CSS course in
+      <a href="https://freecodecamp.com" class="hover:gray-200">FreeCodeCamp.org</a>
+    </p> -->
+    <h4 class="block mx-auto mt-3 text-gray-600">
+      ©2022 <span class="font-bold text-red-400">Arturo2R</span> Initially made in
+      <qua class="text-yellow-400">Quarantine</qua>
+    </h4>
+  </footer>
+  <!-- <script type="module" src="https://unpkg.com/dark-mode-toggle"></script> -->
+  <!-- <script src="./main.js"></script> -->
+  <!-- <script fetchpriority="high" src="https://unpkg.com/alpinejs" defer></script> -->
+
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body></html>
