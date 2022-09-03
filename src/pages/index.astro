@@ -3,6 +3,11 @@ import "../styles/fonts.css"
 import "../styles/styles.css"
 import Navbar from "../components/Navbar.astro"
 import Footer from "../components/Footer.astro"
+import Test from "../components/Test"
+import Projects from "../components/Projects.astro"
+import Profile from "../components/Profile.astro"
+import Hero from "../components/Hero.astro"
+// import {GoogleAnalytics} from "astro-analytics"
 
 ---
 
@@ -67,134 +72,17 @@ import Footer from "../components/Footer.astro"
 
 <body class="dark:bg-deep-blue">
   <main>
-    <!------NavBar------------------------------------->
-    <!-- <nav class="flex z-10 justify-between items-center p-4 w-full bg-hueso nav" id="navbar" x-data="{isOpen: false}">
-      <img src="" alt="Logo" class="mx-auto md:m-0" />
-      <button class="md:hidden" @click="console.log('Esta abierto careverga');">
-        x
-      </button>
-      <ul class="
-            hidden
-            md:flex md:flex-row md:justify-between md:w-2/5
-            text-3xl
-            font-[500]
-            text-good-gray
-            font-secondary
-          ">
-        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
-          <a href="#welcome-section">About Me</a>
-        </li>
-        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
-          <a href="#project-title">Work</a>
-        </li>
-        <li class="p-1 h-full hover:bg-red-200 hover:text-white">
-          <a href="#profile-link">Contact</a>
-        </li>
-      </ul>
-    </nav> -->
+    <Navbar links={[{label:"About Me", link:"#welcome-section"},{label: "Projects", link:"#projects"},{label: "Contact Me" , link:"#contact"}]} />
 
-    <!-- Lab -->
+    <!-- <Test /> -->
+    <Hero />
 
-    <Navbar links={[{label:"About Me", link:"#welcome-section"},{label: "Projects"
-      ,link:"#projects"},{label: "Contact Me" , link:"#contact"}]} />
+    <Projects title="These are some of my projects" />
 
-    <!-- Lab -->
-
-    <!------Welcome Section------>
-    <section id="welcome-section" class="flex w-full min-h-screen bg-gradiente">
-      <div class="flex-row place-self-center mx-auto my-auto text-center">
-        <h1
-          class="no-h1  md:leading-[128px]  animate__animated animate__fadeInDown text-royal-red dark:text-hueso font-primary">
-          Arturo<br> Rebolledo
-        </h1>
-        <p
-          class="text-3xl italic font-thin animate__animated animate__fadeIn text-normal text-dark-blue dark:text-royal-red">
-          Web Developer
-        </p>
-      </div>
-    </section>
-
-    <!-- <Hycosaedron /> -->
-
-    <!-- <canvas id="canvas3d" class="mx-auto w-full h-60" /> -->
-
-    <!-- <iframe src='https://my.spline.design/untitled-5b04123bb5070f563b8858fa7f888a48/' frameborder='0' width='300px'
-      height='300px'></iframe> -->
-    <!-- <div class="simple"></div> -->
-    <!-------Projects------------>
-    <!--TODO:Hacer buenas y responsives las columnass -->
-    <section id="projects" class="px-6 w-full min-h-screen projects-section-headero">
-      <h2 id="project-tile"
-        class="mx-auto text-3xl text-center animate__animated animate__fadeInBottomLeft project-tile font-primary text-royal-red dark:text-hueso">
-        These Are Some Of My Projects
-      </h2>
-      <div
-        x-data="{links: [{link: 'https://social-u.vercel.app', id: '7', name: 'Social Media App'},{link: 'https://casasluzka.netlify.app', id: '6', name: 'Real State Agencie Website'}, {link: 'https://mraarquitectura.com.co', id:'0', name: 'Furniture Agencie Website'},{link: 'https://codepen.io/Arturo2R/full/pooZOLB/', id:'1', name: 'Guitar Store Landing Page'},{link: 'https://codepen.io/Arturo2R/full/pogoJxJ/', id:'2', name: 'Documentation Website'},{link: 'https://codepen.io/Arturo2R/full/XWJydyZ/', id:'3', name: 'Form Survey'},{link: 'https://arturo2r.github.io/PersonalPortfolio/', id:'4', name: 'Personal Portfolio'}]}"
-        class="grid grid-cols-1 grid-flow-row gap-6 justify-center mx-4 mt-6 md:gap-y-8 md:gap-x-12 md:grid-cols-3 md:grid-rows-3 gr custom-grid">
-        <template x-for="link in links" :key="link.id">
-          <a x-bind:href="link.link" target="_blank">
-            <div
-              class="flex h-72 bg-gray-400 bg-center bg-cover rounded-3xl article project-tile hover:shadow-2xl dark:hover:shadow-sky-500/50 col-sm"
-              :class="'div'+ link.id">
-              <div
-                class="block place-self-end p-2 mx-auto mb-4 w-11/12 text-center text-gray-400 uppercase rounded-3xl art-button">
-                <span x-text="link.name"></span>
-              </div>
-            </div>
-          </a>
-        </template>
-      </div>
-    </section>
-    <div class="simple"></div>
-    <!------Profile------>
-    <section id="contact" class="p-10 mt-8 mb-12 font-secondary">
-      <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red dark:text-sky-200 text-5xl md:text-7xl ">
-        Let's work together...
-      </h2>
-      <div class="flex flex-col flex-wrap justify-around mt-16 italic font-bold sm:flex-row text-whites">
-        <a rel="noopener" href="https://github.com/Arturo2R" target="_blank"
-          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-github"
-            aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
-            Github
-          </h6>
-        </a>
-        <!-- <a rel="noopener" id="profile-link" href="https://freecodecamp.com/Arturo2R" target="_blank"
-          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-free-code-camp"
-            aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
-            FreeCodeCamp
-          </h6>
-        </a> -->
-        <a rel="noopener" href="https://www.linkedin.com/in/arturo2r" target="_blank"
-          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-linkedin"
-            aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
-            LinkedIn
-          </h6>
-        </a>
-        <a href="tel:+573043473707" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i
-            class="text-3xl text-royal-red fa fa-phone" aria-hidden="true"></i>
-          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
-            Call me
-          </h6>
-        </a>
-        <a href="mailto:arturoreb2r@outlook.com" target="_blank" class="flex items-center profile-link"><i
-            class="text-3xl text-royal-red fa fa-inbox" aria-hidden="true"></i>
-          <h6 class="pl-2 text-2xl font-bold text-dark-blue dark:text-hueso">
-            Send a mail
-          </h6>
-        </a>
-      </div>
-    </section>
+    <Profile />
   </main>
 
   <Footer />
-  <!-- <script type="module" src="https://unpkg.com/dark-mode-toggle"></script> -->
-  <!-- <script src="./main.js"></script> -->
-  <!-- <script fetchpriority="high" src="https://unpkg.com/alpinejs" defer></script> -->
-
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
 </html>

@@ -1,7 +1,5 @@
-import React from "react";
-
 const Test = () => {
-	return <div>Test</div>;
+	return <h3>Test</h3>;
 };
 
 export default Test;

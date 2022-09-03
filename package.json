@@ -29,9 +29,10 @@
 	"description": "The personal portfolio website of Arturo Rebolledo",
 	"private": true,
 	"devDependencies": {
+		"@astrojs/partytown": "^0.1.6",
 		"@astrojs/react": "^0.2.0",
 		"@astrojs/svelte": "^0.1.4",
-		"@astrojs/tailwind": "^0.2.1",
+		"@astrojs/tailwind": "^0.2.2",
 		"react": "^17.0.2 || ^18.0.0",
 		"react-dom": "^17.0.2 || ^18.0.0",
 		"svelte": "^3.46.4"

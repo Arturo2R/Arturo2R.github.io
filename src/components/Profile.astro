@@ -1,0 +1,48 @@
+---
+export interface props {
+  title?: string;
+}
+
+const {title="Let's work together..."} = Astro.props
+---
+
+<section id="contact" class="p-10 mt-8 mb-12 font-secondary">
+      <h2 class="mx-auto mt-12 font-[500] text-center text-royal-red dark:text-sky-200 text-5xl md:text-7xl ">
+        {title}
+      </h2>
+      <div class="flex flex-col flex-wrap justify-around mt-16 italic font-bold sm:flex-row text-whites">
+        <a rel="noopener" href="https://github.com/Arturo2R" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-github"
+            aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            Github
+          </h6>
+        </a>
+        <!-- <a rel="noopener" id="profile-link" href="https://freecodecamp.com/Arturo2R" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-free-code-camp"
+            aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            FreeCodeCamp
+          </h6>
+        </a> -->
+        <a rel="noopener" href="https://www.linkedin.com/in/arturo2r" target="_blank"
+          class="flex items-center w-1/2 md:w-auto profile-link"><i class="text-3xl text-royal-red fa fa-linkedin"
+            aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            LinkedIn
+          </h6>
+        </a>
+        <a href="tel:+573043473707" target="_blank" class="flex items-center w-1/2 md:w-auto profile-link"><i
+            class="text-3xl text-royal-red fa fa-phone" aria-hidden="true"></i>
+          <h6 class="pl-2 text-xl font-bold text-dark-blue dark:text-hueso">
+            Call me
+          </h6>
+        </a>
+        <a href="mailto:arturoreb2r@outlook.com" target="_blank" class="flex items-center profile-link"><i
+            class="text-3xl text-royal-red fa fa-inbox" aria-hidden="true"></i>
+          <h6 class="pl-2 text-2xl font-bold text-dark-blue dark:text-hueso">
+            Send a mail
+          </h6>
+        </a>
+      </div>
+    </section>
