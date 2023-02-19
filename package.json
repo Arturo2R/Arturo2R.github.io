@@ -1,8 +1,8 @@
 {
-	"name": "personal-portfolio",
+	"name": "arturo2r-portfolio",
 	"version": "1.0.0",
 	"main": "main.js",
-	"repository": "git@github.com:Arturo2R/PersonalPortfolio.git",
+	"repository": "git@github.com:Arturo2R/Arturo2r.git",
 	"author": "Arturo Rebolledo <elrayoarturopro@outlook.com>",
 	"license": "MIT",
 	"dependencies": {
