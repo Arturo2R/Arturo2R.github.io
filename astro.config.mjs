@@ -14,4 +14,7 @@ export default defineConfig({
       applyBaseStyles: true
     }
   }), svelte(), partytown({})],
+  site: 'https://arturo2r.github.io',
+  base: '/',
+
 });
