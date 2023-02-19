@@ -1,88 +1,107 @@
 ---
-import "../styles/fonts.css"
-import "../styles/styles.css"
-import Navbar from "../components/Navbar.astro"
-import Footer from "../components/Footer.astro"
-import Test from "../components/Test"
-import Projects from "../components/Projects.astro"
-import Profile from "../components/Profile.astro"
-import Hero from "../components/Hero.astro"
+import "../styles/fonts.css";
+import "../styles/styles.css";
+import { Navbar } from "../components/Navbar.jsx";
+import Footer from "../components/Footer.astro";
+import Test from "../components/Test";
+import Projects from "../components/Projects.astro";
+import Profile from "../components/Profile.astro";
+import Hero from "../components/Hero.astro";
 // import {GoogleAnalytics} from "astro-analytics"
-
 ---
 
 <html lang="en" class="dark">
+	<head>
+		<title>Arturo Rebolledo</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-<head>
-  <title>Arturo Rebolledo</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
+		<meta name="author" content="Arturo Rebolledo" />
 
-  <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
-  <meta name="author" content="Arturo Rebolledo" />
+		<!-- SEO -->
+		<meta name="title" content="Arturo Rebolledo" />
+		<meta
+			name="description"
+			content="Talent Frontend Web Developer Engineer based in COlombia"
+		/>
+		<meta name="keywords" content="d" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="English" />
 
-  <!-- SEO -->
-  <meta name="title" content="Arturo Rebolledo">
-  <meta name="description" content="Talent Frontend Web Developer Engineer based in COlombia">
-  <meta name="keywords" content="d">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
+		<!--OpenGraph-->
+		<meta property="og:title" content="Arturo Rebolledo Dev Portfolio" />
+		<meta property="og:site_name" content="Arturo Rebolledo Dev Portfolio" />
+		<meta property="og:url" content="arturo2r.me" />
+		<meta
+			property="og:description"
+			content="Talent Frontend Web Developer Engineer based in COlombia"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/img/realState.png" />
 
-  <!--OpenGraph-->
-  <meta property="og:title" content="Arturo Rebolledo Dev Portfolio">
-  <meta property="og:site_name" content="Arturo Rebolledo Dev Portfolio">
-  <meta property="og:url" content="arturo2r.me">
-  <meta property="og:description" content="Talent Frontend Web Developer Engineer based in COlombia">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/img/realState.png">
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@_aturo2r" />
+		<meta
+			name="twitter:description"
+			content="Talent Frontend Web Developer Engineer based in COlombia"
+		/>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@_aturo2r">
-  <meta name="twitter:description" content="Talent Frontend Web Developer Engineer based in COlombia">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- <link rel="stylesheet" href="/style/fonts.css"> -->
-  <!-- <link href="./main.css" rel="stylesheet" /> -->
-  <!-- <link rel="stylesheet" href="./styles.css"> -->
-  <!-- <link
+		<!-- CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!-- <link rel="stylesheet" href="/style/fonts.css"> -->
+		<!-- <link href="./main.css" rel="stylesheet" /> -->
+		<!-- <link rel="stylesheet" href="./styles.css"> -->
+		<!-- <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     /> -->
 
-  <script>
-    import Alpine from 'alpinejs';
-    window.Alpine = Alpine;
-    Alpine.start();
-    // import { Application } from '@splinetool/runtime';
+		<script>
+			import Alpine from "alpinejs";
+			// window.Alpine = Alpine;
+			Alpine.start();
+			// import { Application } from '@splinetool/runtime';
 
-    // const canvas = document.getElementById('canvas3d');
-    // const app = new Application(canvas);
-    // app.load('https://prod.spline.design/FcbbyRrRW4Y5GsSx/scene.splinecode');
+			// const canvas = document.getElementById('canvas3d');
+			// const app = new Application(canvas);
+			// app.load('https://prod.spline.design/FcbbyRrRW4Y5GsSx/scene.splinecode');
+		</script>
 
+		<!-- <GoogleAnalytics id="G-1FS52X9WVF" /> -->
+	</head>
 
-  </script>
+	<body class="dark:bg-deep-blue">
+		<main>
+			<Navbar
+				links={[
+					{ label: "About Me", link: "#welcome-section" },
+					{ label: "Projects", link: "#projects" },
+					{ label: "Contact Me", link: "#contact" },
+				]}
+				client:load
+			/>
 
-  <!-- <GoogleAnalytics id="G-1FS52X9WVF" /> -->
+			<!-- <Test /> -->
+			<Hero />
 
-</head>
+			<Projects title="These are some of my projects" />
 
-<body class="dark:bg-deep-blue">
-  <main>
-    <Navbar links={[{label:"About Me", link:"#welcome-section"},{label: "Projects", link:"#projects"},{label: "Contact Me" , link:"#contact"}]} />
+			<Profile />
+		</main>
 
-    <!-- <Test /> -->
-    <Hero />
-
-    <Projects title="These are some of my projects" />
-
-    <Profile />
-  </main>
-
-  <Footer />
-</body>
-
+		<Footer />
+	</body>
 </html>

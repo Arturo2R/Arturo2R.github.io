@@ -7,11 +7,11 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind({
+  integrations: [react(), tailwind({
     // Example: Provide a custom path to a Tailwind config file
     config: {
       path: './tailwind.config.js',
       applyBaseStyles: true
     }
-  }), svelte(), react(), partytown({})],
+  }), svelte(), partytown({})],
 });
